@@ -1,0 +1,346 @@
+2021-08-15 16:09:23 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Fetching config from server at : http://localhost:8888
+2021-08-15 16:09:23 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-08-15 16:09:23 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/twitter-to-kafka/default": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-08-15 16:09:23 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				No active profile set, falling back to default profiles: default
+2021-08-15 16:09:23 [main] INFO  o.s.cloud.context.scope.GenericScope -
+				BeanFactory id=05cd75f8-fc4c-3588-be9a-d653078b0595
+2021-08-15 16:09:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				Started TwitterToKafkaServiceApplication in 2.765 seconds (JVM running for 4.605)
+2021-08-15 16:09:24 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+				
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-15 16:09:24 [main] ERROR o.s.boot.SpringApplication -
+				Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:25)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.toArray(Object[])" because the return value of "com.microservices.demo.twitter.to.kafka.service.config.TwitterToConfigServerConfigData.getTwitterKeywords()" is null
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:30)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2021-08-15 16:18:25 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Fetching config from server at : http://localhost:8888
+2021-08-15 16:18:25 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-08-15 16:18:25 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/twitter-to-kafka/default": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-08-15 16:18:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				No active profile set, falling back to default profiles: default
+2021-08-15 16:18:26 [main] INFO  o.s.cloud.context.scope.GenericScope -
+				BeanFactory id=05cd75f8-fc4c-3588-be9a-d653078b0595
+2021-08-15 16:18:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				Started TwitterToKafkaServiceApplication in 2.557 seconds (JVM running for 3.735)
+2021-08-15 16:18:26 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+				
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-15 16:18:26 [main] ERROR o.s.boot.SpringApplication -
+				Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:25)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.toArray(Object[])" because the return value of "com.microservices.demo.twitter.to.kafka.service.config.TwitterToConfigServerConfigData.getTwitterKeywords()" is null
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:30)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2021-08-15 16:39:47 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Fetching config from server at : http://localhost:8888
+2021-08-15 16:39:48 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Located environment: name=twitter-to-kafka, profiles=[default], label=null, version=87331adeb24f783d6a360e78912ef1c65f9f095c, state=null
+2021-08-15 16:39:48 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration -
+				Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
+2021-08-15 16:39:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				No active profile set, falling back to default profiles: default
+2021-08-15 16:39:49 [main] INFO  o.s.cloud.context.scope.GenericScope -
+				BeanFactory id=e063d197-6b27-3088-b2d9-a8b3b145414c
+2021-08-15 16:39:49 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				Started TwitterToKafkaServiceApplication in 3.884 seconds (JVM running for 4.866)
+2021-08-15 16:39:49 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+				
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-15 16:39:49 [main] ERROR o.s.boot.SpringApplication -
+				Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:25)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.toArray(Object[])" because the return value of "com.microservices.demo.twitter.to.kafka.service.config.TwitterToConfigServerConfigData.getTwitterKeywords()" is null
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:30)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2021-08-15 16:47:27 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Fetching config from server at : http://localhost:8888
+2021-08-15 16:47:27 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Located environment: name=twitter-to-kafka, profiles=[default], label=null, version=87331adeb24f783d6a360e78912ef1c65f9f095c, state=null
+2021-08-15 16:47:27 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration -
+				Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
+2021-08-15 16:47:27 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				No active profile set, falling back to default profiles: default
+2021-08-15 16:47:28 [main] INFO  o.s.cloud.context.scope.GenericScope -
+				BeanFactory id=e063d197-6b27-3088-b2d9-a8b3b145414c
+2021-08-15 16:47:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				Started TwitterToKafkaServiceApplication in 2.723 seconds (JVM running for 3.731)
+2021-08-15 16:47:28 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+				
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-15 16:47:28 [main] ERROR o.s.boot.SpringApplication -
+				Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:25)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.toArray(Object[])" because the return value of "com.microservices.demo.twitter.to.kafka.service.config.TwitterToConfigServerConfigData.getTwitterKeywords()" is null
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:30)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2021-08-15 18:03:04 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Fetching config from server at : http://localhost:8888
+2021-08-15 18:03:05 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Could not locate PropertySource: None of labels [] found
+2021-08-15 18:03:05 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				No active profile set, falling back to default profiles: default
+2021-08-15 18:03:06 [main] INFO  o.s.cloud.context.scope.GenericScope -
+				BeanFactory id=e063d197-6b27-3088-b2d9-a8b3b145414c
+2021-08-15 18:03:06 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext -
+				Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'twitterToConfigServerConfigData': Could not bind properties to 'TwitterToConfigServerConfigData' : prefix=twitterToKafkaService, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.source.InvalidConfigurationPropertyNameException: Configuration property name 'twitterToKafkaService' is not valid
+2021-08-15 18:03:06 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+				
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-15 18:03:06 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+				
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Configuration property name 'twitterToKafkaService' is not valid:
+
+    Invalid characters: 'T', 'K', 'S'
+    Bean: twitterToKafkaServiceApplication
+    Reason: Canonical names should be kebab-case ('-' separated), lowercase alpha-numeric characters and must start with a letter
+
+Action:
+
+Modify 'twitterToKafkaService' so that it conforms to the canonical names requirements.
+
+2021-08-15 18:05:12 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Fetching config from server at : http://localhost:8888
+2021-08-15 18:05:13 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Could not locate PropertySource: None of labels [] found
+2021-08-15 18:05:13 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				No active profile set, falling back to default profiles: default
+2021-08-15 18:05:13 [main] INFO  o.s.cloud.context.scope.GenericScope -
+				BeanFactory id=e063d197-6b27-3088-b2d9-a8b3b145414c
+2021-08-15 18:05:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				Started TwitterToKafkaServiceApplication in 3.726 seconds (JVM running for 4.724)
+2021-08-15 18:05:14 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+				
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-15 18:05:14 [main] ERROR o.s.boot.SpringApplication -
+				Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:25)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.toArray(Object[])" because the return value of "com.microservices.demo.twitter.to.kafka.service.config.TwitterToConfigServerConfigData.getTwitterKeywords()" is null
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:30)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2021-08-15 18:38:59 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Fetching config from server at : http://localhost:8888
+2021-08-15 18:38:59 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-08-15 18:38:59 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/twitter-to-kafka/default": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-08-15 18:38:59 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				No active profile set, falling back to default profiles: default
+2021-08-15 18:39:00 [main] INFO  o.s.cloud.context.scope.GenericScope -
+				BeanFactory id=e063d197-6b27-3088-b2d9-a8b3b145414c
+2021-08-15 18:39:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				Started TwitterToKafkaServiceApplication in 2.366 seconds (JVM running for 3.566)
+2021-08-15 18:39:00 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+				
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-15 18:39:00 [main] ERROR o.s.boot.SpringApplication -
+				Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:25)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.toArray(Object[])" because the return value of "com.microservices.demo.twitter.to.kafka.service.config.TwitterToConfigServerConfigData.getTwitterKeywords()" is null
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:30)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2021-08-15 18:54:25 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Fetching config from server at : http://localhost:8888
+2021-08-15 18:54:26 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-08-15 18:54:26 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/twitter-to-kafka/default": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2021-08-15 18:54:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				No active profile set, falling back to default profiles: default
+2021-08-15 18:54:26 [main] INFO  o.s.cloud.context.scope.GenericScope -
+				BeanFactory id=e063d197-6b27-3088-b2d9-a8b3b145414c
+2021-08-15 18:54:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				Started TwitterToKafkaServiceApplication in 2.147 seconds (JVM running for 3.349)
+2021-08-15 18:54:26 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+				
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-15 18:54:26 [main] ERROR o.s.boot.SpringApplication -
+				Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:25)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.toArray(Object[])" because the return value of "com.microservices.demo.twitter.to.kafka.service.config.TwitterToConfigServerConfigData.getTwitterKeywords()" is null
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:30)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2021-08-15 19:01:26 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Fetching config from server at : http://localhost:8888
+2021-08-15 19:01:27 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Located environment: name=twitter-to-kafka, profiles=[default], label=null, version=99eff8cabbfb3770442bc63e7b0d5811f529e33f, state=null
+2021-08-15 19:01:27 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration -
+				Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/padmajan87/spring-cloud-config-repository.git/twitter-to-kafka.yml'}]
+2021-08-15 19:01:27 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				No active profile set, falling back to default profiles: default
+2021-08-15 19:01:28 [main] INFO  o.s.cloud.context.scope.GenericScope -
+				BeanFactory id=e063d197-6b27-3088-b2d9-a8b3b145414c
+2021-08-15 19:01:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				Started TwitterToKafkaServiceApplication in 3.558 seconds (JVM running for 4.566)
+2021-08-15 19:01:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				[Java, Microservices, Spring, Kafka, ElasticSearch]
+2021-08-15 22:29:22 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Fetching config from server at : http://localhost:8888
+2021-08-15 22:29:24 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator -
+				Located environment: name=twitter-to-kafka, profiles=[default], label=null, version=99eff8cabbfb3770442bc63e7b0d5811f529e33f, state=null
+2021-08-15 22:29:24 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration -
+				Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/padmajan87/spring-cloud-config-repository.git/twitter-to-kafka.yml'}]
+2021-08-15 22:29:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				No active profile set, falling back to default profiles: default
+2021-08-15 22:29:25 [main] INFO  o.s.cloud.context.scope.GenericScope -
+				BeanFactory id=9db63b6f-7deb-3e34-8cbc-eb53da98020c
+2021-08-15 22:29:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				Started TwitterToKafkaServiceApplication in 6.505 seconds (JVM running for 7.517)
+2021-08-15 22:29:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication -
+				[Java, Microservices, Spring, Kafka, ElasticSearch]
+2021-08-15 22:29:25 [main] INFO  c.m.d.t.t.k.s.r.i.StreamRunnerImpl -
+				keywords extracted Java
+2021-08-15 22:29:25 [main] INFO  c.m.d.t.t.k.s.r.i.StreamRunnerImpl -
+				started filtering
+2021-08-15 22:29:25 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl -
+				Establishing connection.
+2021-08-15 22:29:26 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl -
+				Connection established.
+2021-08-15 22:29:26 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl -
+				Receiving status stream.
+2021-08-15 22:29:26 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -
+				Twitter status with text @PoorApesClub https://t.co/wcKM0uP8tP
+2021-08-15 22:29:27 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -
+				Twitter status with text RT @OT7wrecked: - Spotify streams:
+• Spring Day: 270M
+• MIR 180M
+• Dynamite: 1.04B
+• Fake Love (JPN Ver.): 10M
+
+(2/2)
+2021-08-15 22:29:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -
+				Twitter status with text Sooo who staying in the Spring Garden area, The University Village, Spartan Crossings, Chapman Place, Vic & Reynolds Place people? Asking for myself 😊
+#NCAT #UNCG
+2021-08-15 22:29:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -
+				Twitter status with text RT @yudhabaskoro: Agus Widanarko wears not a surgical but superhero mask in the pandemic. By trade an anti-drug counsellor, he moonlights a…
+2021-08-15 22:29:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -
+				Twitter status with text @queerInRepair "bedrock is more optimised than java"
+BITCH I BARELY GET 30 FPS ON 8 CHUNKS ON MY FUCKING 300 DOLLAR PHONE
+2021-08-15 22:29:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -
+				Twitter status with text RT @Analog_min: 薫ちゃん描けば
+Spring Screaming出来るのよね…… https://t.co/wmtZyed11v
+2021-08-15 22:29:35 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -
+				Twitter status with text RT @girumteklewolde: Some powers struggling to replicate ‘Arab Spring’ in Horn of Africa  is impossible ‼️
+#SayNoToWesternImperialism
+@POTU…
+2021-08-15 22:29:35 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -
+				Twitter status with text Burmese community in NewYork, United States, held fundraising campaign in order to support Spring Revolution in Myanmar. #Aug15Coup #WhatsHappeningInMyanmar  #AcceptNUG_RejectMilitary https://t.co/u7uZ5MZ13t
+2021-08-15 22:29:36 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -
+				Twitter status with text NUG’s much anticipated Spring (Nwayoo) Lottery opened at 4pm, and sold out 50,000 tickets (quota for today) within an hour. So much for junta’s threats.
+
+#MohingaMatters
+#freedommemoirs 
+#WhatsHappeningInMyanmar
+#Aug15Coup
+
+https://t.co/5vdV5rbi9d
+2021-08-15 22:29:36 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -
+				Twitter status with text RT @LIGHTNI68492726: Scene of fundraising campaign for Myanmar Spring Revolution by Myanmar nationalities from Burmese community in New Yor…
+2021-08-15 22:29:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -
+				Twitter status with text Burmese community in NewYork, United States, held fundraising campaign in order to support Spring Revolution in Myanmar. #Aug15Coup #WhatsHappeningInMyanmar  #AcceptNUG_RejectMilitary https://t.co/k4tqOZbcRI
+2021-08-15 22:29:38 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -
+				Twitter status with text @usainbolt hey spring king..  Can you send me your used shoe for me and my brother.. Lots of love from India ARJUN(5 YEARS ONLY 😉).. TAKE CARE MAN
+2021-08-15 22:29:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -
+				Twitter status with text RT @mc_oleh: Somebody’s gotta do it
+
+#programmer #programming #coding #code #developer #development #fix #wedding #web #python #java #Javas…
+2021-08-15 22:29:40 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -
+				Twitter status with text @tyunspring omg gyunight spring!!^^ imy!!!!
+2021-08-15 22:29:40 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -
+				Twitter status with text NUG’s much anticipated Spring (Nwayoo) Lottery opened at 4pm, and sold out 50,000 tickets (quota for today) within an hour. So much for junta’s threats.
+
+#MohingaMatters
+#freedommemoirs 
+#WhatsHappeningInMyanmar
+#Aug15Coup
+
+https://t.co/oc2pSVDWRx
+2021-08-15 22:29:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -
+				Twitter status with text NUG’s much anticipated Spring (Nwayoo) Lottery opened at 4pm, and sold out 50,000 tickets (quota for today) within an hour. So much for junta’s threats.
+
+#MohingaMatters
+#freedommemoirs 
+#WhatsHappeningInMyanmar
+#Aug15Coup
+
+https://t.co/9eS1ocJ7yh
+2021-08-15 22:29:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener -
+				Twitter status with text @TheMarketDog The death bloom starts in October And peaks in the spring. 
+
+For the vaxxed.
+2021-08-15 22:29:43 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+				Application shutdown requested.
+2021-08-15 22:29:43 [RMI TCP Connection(7)-127.0.0.1] INFO  c.m.d.t.t.k.s.r.i.StreamRunnerImpl -
+				Closing Twitter stream
